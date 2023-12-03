@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Cv-Express</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Cv Express</h1>
+        </div>
+        <div class="boton">
+            <a href="#paso1">¡Hacer curriculum!</a>
+        </div>
+    </header>
+
+    <section id="paso1">
+        <div class="tuto">
+            <h2>Necesito los siguientes datos</h2>
+            <h3>Nombre, Apellido, DNI, Edad, Fecha de nacimiento, Nacionalidad, Estado civil, Hijos, Teléfono, Estudios,
+                Domicilio, localidad, Experiencia laboral (opcional) y Foto (opcional)</h3>
+        </div>
+        <div class="botones">
+            <a href="#formulario">Completar formulario</a>
+            <a href="https://web.whatsapp.com/" target="_blank">Enviar datos via Whatsapp</a>
+        </div>
+
+    </section>
+    <section id="formulario">
+        <form action="https://formsubmit.co/jorp2023@outlook.com" method="POST" enctype="multipart/form-data">
+            <label for="nombres">Nombres: </label><input type="text" name="name" required placeholder="nombres"><br>
+
+            <label for="DNI">DNI: </label><input type="text" name="name" required placeholder="DNI"><br>
+
+            <label for="Edad">Edad</label><input type="number" name="number" required placeholder="Edad"><br>
+
+            <label for="nacimiento">Fecha de nacimiento</label><input type="date" name="name" required
+                placeholder="nacimiento"><br>
+
+            <label for="nacionalidad">Nacionalidad: </label><input type="text" name="nacionalidad" required
+                placeholder="Nacionalidad"><br>
+
+            <label for="Estado-civil">Estado Civil: </label><input type="text" name="estadoCivil" required
+                placeholder="Estado civil"><br>
+
+            <label for="Hijos">Hijos: </label><input type="text" name="Hijos" required placeholder="Hijos"><br>
+
+            <label for="telefono">Teléfono: </label><input type="tel" name="name" required placeholder="Teléfono"><br>
+
+
+
+
+
+
+
+            <label for="email">Email</label> <input type="email" name="email" required placeholder="email"><br>
+            <label for="elegir-foto">Seleccionar foto</label><input type="file" name="img"
+                accept="image/png, image/jpeg">
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+</body>
+
+</html>
